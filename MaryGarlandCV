@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mary Garland - CV</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        /* ===== Global Styles ===== */
+        :root {
+            --primary-text: #222222;
+            --secondary-text: #555555;
+            --accent: #125688;
+            --border-color: #dddddd;
+            --background: #f5f5f5;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html, body {
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--background);
+            color: var(--primary-text);
+            line-height: 1.6;
+        }
+
+        body {
+            padding: 1.5rem;
+        }
+
+        .cv-container {
+            max-width: 950px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 2rem 2.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        @media (max-width: 600px) {
+            .cv-container {
+                padding: 1.5rem;
+            }
+        }
+
+        /* ===== Header ===== */
+        header {
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin: 0 0 0.3rem 0;
+            letter-spacing: 0.03em;
+        }
+
+        .tagline {
+            font-size: 0.95rem;
+            color: var(--secondary-text);
+            margin: 0.1rem 0;
+        }
+
+        .contact-info {
+            margin-top: 0.6rem;
+            font-size: 0.9rem;
+            color: var(--secondary-text);
+        }
+
+        .contact-info a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        .contact-info a:hover,
+        .contact-info a:focus {
+            text-decoration: underline;
+        }
+
+        /* ===== Section Layout ===== */
+        main {
+            margin-top: 1rem;
+        }
+
+        section {
+            margin-bottom: 1.5rem;
+        }
+
+        h2 {
+            font-size: 1.15rem;
+            margin: 0 0 0.75rem 0;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--accent);
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 0.3rem;
+        }
+
+        h3 {
+            font-size: 1rem;
+            margin: 0;
+        }
+
+        .item-header {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: baseline;
+            gap: 0.25rem 1rem;
+        }
+
+        .item-title {
+            font-weight: 600;
+        }
+
+        .item-meta {
+            font-size: 0.85rem;
+            color: var(--secondary-text);
+        }
+
+        .item-subtitle {
+            font-size: 0.9rem;
+            color: var(--secondary-text);
+        }
+
+        .item-location {
+            font-size: 0.9rem;
+            color: var(--secondary-text);
+        }
+
+        .item-dates {
+            font-size: 0.85rem;
+            color: var(--secondary-text);
+            white-space: nowrap;
+        }
+
+        .item-body {
+            margin-top: 0.5rem;
+        }
+
+        ul {
+            padding-left: 1.1rem;
+            margin: 0.25rem 0 0 0;
+        }
+
+        li {
+            margin-bottom: 0.2rem;
+        }
+
+        /* Skills & simple lists */
+        .inline-list {
+            list-style: none;
+            padding-left: 0;
+            margin: 0.25rem 0 0 0;
+        }
+
+        .inline-list li {
+            margin-bottom: 0.25rem;
+        }
+
+        .skills-category {
+            font-weight: 600;
+        }
+
+        /* Links in content */
+        a {
+            color: var(--accent);
+        }
+
+        a:hover,
+        a:focus {
+            text-decoration: underline;
+        }
+
+        /* Print styles */
+        @media print {
+            body {
+                background-color: #ffffff;
+                padding: 0;
+            }
+
+            .cv-container {
+                box-shadow: none;
+                border-radius: 0;
+                max-width: 100%;
+                margin: 0;
+                padding: 1.5rem 1.5rem;
+            }
+
+            a {
+                color: #000000;
+                text-decoration: none;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="cv-container">
+    <header>
+        <h1>Mary Garland</h1>
+        <p class="tagline">Master of Science in Finance, Suffolk University Sawyer Business School (STEM-designated)</p>
+        <!-- Add your contact details (email, phone, LinkedIn, GitHub) in the line below if you want them to appear -->
+        <p class="contact-info"><!-- Example: Email, phone, LinkedIn, GitHub --></p>
+    </header>
+
+    <main>
+        <!-- ===================== Education Section ===================== -->
+        <section aria-label="Education">
+            <h2>Education</h2>
+
+            <article>
+                <div class="item-header">
+                    <div>
+                        <h3 class="item-title">Suffolk University Sawyer Business School</h3>
+                        <div class="item-subtitle">Master of Science in Finance, STEM designated | Cumulative GPA: 3.7/4.0 | CFA &amp; GARP-affiliated program</div>
+                    </div>
+                    <div class="item-meta">
+                        <div class="item-location">Boston, MA</div>
+                        <div class="item-dates">Sep 2023 – Jan 2026</div>
+                    </div>
+                </div>
+            </article>
+
+            <article>
+                <div class="item-header">
+                    <div>
+                        <h3 class="item-title">Massachusetts Institute of Technology (MIT)</h3>
+                        <div class="item-subtitle">Certificate, Mathematical Methods for Quantitative Finance | Online Program</div>
+                    </div>
+                    <div class="item-meta">
+                        <div class="item-location">Cambridge, MA</div>
+                        <div class="item-dates">May 2025 – Jan 2026</div>
+                    </div>
+                </div>
+            </article>
+
+            <article>
+                <div class="item-header">
+                    <div>
+                        <h3 class="item-title">Stanford University</h3>
+                        <div class="item-subtitle">Certificate, Introduction to Probability Management | Online Program</div>
+                    </div>
+                    <div class="item-meta">
+                        <div class="item-location">Stanford, CA</div>
+                        <div class="item-dates">May 2025 – Aug 2025</div>
+                    </div>
+                </div>
+            </article>
+
+            <article>
+                <div class="item-header">
+                    <div>
+                        <h3 class="item-title">Suffolk University</h3>
+                        <div class="item-subtitle">Bachelor of Science, Philosophy | Minor in Applied Legal Studies</div>
+                    </div>
+                    <div class="item-meta">
+                        <div class="item-location">Boston, MA</div>
+                        <div class="item-dates">Sep 2012 – Jan 2016</div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!-- ===================== Experience Section ===================== -->
+        <!-- Start Experience Section -->
+        <section aria-label="Work Experience">
+            <h2>Work Experience</h2>
+
+            <article>
+                <div class="item-header">
+                    <div>
+                        <h3 class="item-title">AI Engineer / Investment Banker</h3>
+                        <div class="item-subtitle">
+                            <a href="https://openai.com/" target="_blank" rel="noopener noreferrer">Mercor / OpenAI</a>
+                        </div>
+                    </div>
+                    <div class="item-meta">
+                        <div class="item-location">San Francisco, CA</div>
+                        <div class="item-dates">Sep 2025 – Present</div>
+                    </div>
+                </div>
+                <div class="item-body">
+                    <ul>
+                        <li>Refine and develop AI models to enhance their capability to analyze complex financial data and generate deal insights.</li>
+                        <li>Apply AI-driven techniques to solve investment banking-specific problems and support transaction decision-making.</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article>
+                <div class="item-header">
+                    <div>
+                        <h3 class="item-title">Private Equity Analyst Consultant</h3>
+                        <div class="item-subtitle">
+                            <a href="https://www.argillagarlandgroup.com/" target="_blank" rel="noopener noreferrer">The Argilla Garland Group LLC</a>
+                        </div>
+                    </div>
+                    <div class="item-meta">
+                        <div class="item-location">Boston, MA</div>
+                        <div class="item-dates">Jun 2023 – Present</div>
+                    </div>
+                </div>
+                <div class="item-body">
+                    <ul>
+                        <li>Conduct valuations and quantitative modeling for small to mid-sized companies and private equity firms.</li>
+                        <li>Support deal assessment through financial analysis, scenario modeling, and sensitivity testing.</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article>
+                <div class="item-header">
+                    <div>
+                        <h3 class="item-title">CEO / Quantitative Analyst Consultant</h3>
+                        <div class="item-subtitle">
+                            <a href="https://www.argillagarlandgroup.com/matrixmechanics" target="_blank" rel="noopener noreferrer">Matrix Mechanics</a>
+                        </div>
+                    </div>
+                    <div class="item-meta">
+                        <div class="item-location">Boston, MA</div>
+                        <div class="item-dates">Jan 2025 – Oct 2025</div>
+                    </div>
+                </div>
+                <div class="item-body">
+                    <ul>
+                        <li>Developed a large global macro indicators time series model weighted against historical measures for a private fund.</li>
+                        <li>Integrated macroeconomic signals to support investment decision-making and scenario analysis.</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article>
+                <div class="item-header">
+                    <div>
+                        <h3 class="item-title">Private Equity Analyst Consultant</h3>
+                        <div class="item-subtitle">
+                            <a href="http://www.agem.com.au" target="_blank" rel="noopener noreferrer">Agem Property Group</a>
+                        </div>
+                    </div>
+                    <div class="item-meta">
+                        <div class="item-location">Boston, MA</div>
+                        <div class="item-dates">Oct 2024 – Nov 2024</div>
+                    </div>
+                </div>
+                <div class="item-body">
+                    <ul>
+                        <li>Built a model to predict mortgage rates in 2025, supporting strategic planning for funding costs.</li>
+                        <li>Simulated restructured funds usage possibilities via multiple leverage strategies to evaluate potential outcomes.</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article>
+                <div class="item-header">
+                    <div>
+                        <h3 class="item-title">Consultant</h3>
+                        <div class="item-subtitle">
+                            <a href="http://www.ghs.com" target="_blank" rel="noopener noreferrer">ISS / Green Hills Software</a>
+                        </div>
+                    </div>
+                    <div class="item-meta">
+                        <div class="item-location">Boston, MA</div>
+                        <div class="item-dates">Jan 2024 – Oct 2024</div>
+                    </div>
+                </div>
+                <div class="item-body">
+                    <ul>
+                        <li>Performed data analytics to identify and cut waste and manage budget across operations.</li>
+                        <li>Managed orders and highly sensitive U.S. Department of Defense documentation with strict compliance requirements.</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article>
+                <div class="item-header">
+                    <div>
+                        <h3 class="item-title">Private Equity Analyst – Commercial Real Estate</h3>
+                        <div class="item-subtitle">
+                            <a href="https://www.greentree.group/" target="_blank" rel="noopener noreferrer">Greentree Capital &amp; Asset Management</a>
+                        </div>
+                    </div>
+                    <div class="item-meta">
+                        <div class="item-location">Chicago, IL</div>
+                        <div class="item-dates">Aug 2023 – Jan 2024</div>
+                    </div>
+                </div>
+                <div class="item-body">
+                    <ul>
+                        <li>Secured funding (≤ $7M per acquisition) by negotiating with lenders for two deals for a firm ranked #3 in East China and #10 nationally.</li>
+                        <li>Maintained data rooms, created investor decks, and built pro forma models to demonstrate cap rates and IRR.</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article>
+                <div class="item-header">
+                    <div>
+                        <h3 class="item-title">Lead Account Executive</h3>
+                        <div class="item-subtitle">
+                            <a href="https://www.harrismediallc.com/" target="_blank" rel="noopener noreferrer">Harris Media LLC</a>
+                        </div>
+                    </div>
+                    <div class="item-meta">
+                        <div class="item-location">Miami, FL</div>
+                        <div class="item-dates">Feb 2023 – Aug 2023</div>
+                    </div>
+                </div>
+                <div class="item-body">
+                    <ul>
+                        <li>Led a strategic multi-state lobbying campaign for health insurers, resulting in legislation passed in two states.</li>
+                        <li>Advised on digital strategy for two heads of state campaigns and oversaw the Pentagon Memorial’s digital presence.</li>
+                        <li>Coordinated media coverage and stakeholder communication to support client objectives.</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article>
+                <div class="item-header">
+                    <div>
+                        <h3 class="item-title">Director of Sales &amp; Marketing</h3>
+                        <div class="item-subtitle">
+                            <a href="https://www.healthday.com/" target="_blank" rel="noopener noreferrer">HealthDay News</a>
+                        </div>
+                    </div>
+                    <div class="item-meta">
+                        <div class="item-location">New York, NY</div>
+                        <div class="item-dates">Oct 2021 – Sep 2022</div>
+                    </div>
+                </div>
+                <div class="item-body">
+                    <ul>
+                        <li>Negotiated contracts ranging from $30K to $2M with a diverse portfolio of clients.</li>
+                        <li>Verified currency exchange rates and VAT and managed client relations to ensure contract compliance and satisfaction.</li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+
+        <!-- ===================== Leadership Section ===================== -->
+        <section aria-label="Leadership">
+            <h2>Leadership</h2>
+
+            <article>
+                <div class="item-header">
+                    <div>
+                        <h3 class="item-title">Quantum Computing Hub – Quantum Annealing in Banking Training</h3>
+                    </div>
+                    <div class="item-meta">
+                        <div class="item-location">Florence, Italy</div>
+                        <div class="item-dates">2025</div>
+                    </div>
+                </div>
+                <div class="item-body">
+                    <ul>
+                        <li>Participated in advanced training on Python programming for quantum computing, covering quantum algorithm mathematics, quantum annealing frameworks, and practical optimization problem-solving.</li>
+                        <li>Gained hands-on experience with the mathematical foundations of quantum algorithms and real-world quantum annealing problems and solutions used by Intesa Sanpaolo, Italy’s leading bank in the quantum computing sector.</li>
+                    </ul>
+                    <p class="item-subtitle">
+                        More information: <a href="https://www.quantumcomputinghub.eu/" target="_blank" rel="noopener noreferrer">Quantum Computing Hub</a>
+                    </p>
+                </div>
+            </article>
+
+            <article>
+                <div class="item-header">
+                    <div>
+                        <h3 class="item-title">Global Finance Conference</h3>
+                    </div>
+                    <div class="item-meta">
+                        <div class="item-location">Boston, MA</div>
+                        <div class="item-dates">2025</div>
+                    </div>
+                </div>
+                <div class="item-body">
+                    <ul>
+                        <li>Selected to present a paper at the Global Finance Conference, sharing research with academics and practitioners.</li>
+                    </ul>
+                    <p class="item-subtitle">
+                        Conference site: <a href="https://www.glofin.org/" target="_blank" rel="noopener noreferrer">Global Finance Conference</a>
+                    </p>
+                </div>
+            </article>
+
+            <article>
+                <div class="item-header">
+                    <div>
+                        <h3 class="item-title">CFA Institute Research Challenge – Team Captain</h3>
+                    </div>
+                    <div class="item-meta">
+                        <div class="item-location">Boston, MA</div>
+                        <div class="item-dates">2024</div>
+                    </div>
+                </div>
+                <div class="item-body">
+                    <ul>
+                        <li>Led a university-selected team in a regional equity research competition.</li>
+                        <li>Applied DCF and qualitative methods (including Porter’s Five Forces) to value a public company under real-world conditions.</li>
+                    </ul>
+                    <p class="item-subtitle">
+                        Competition information: <a href="https://www.cfaboston.org/" target="_blank" rel="noopener noreferrer">CFA Society Boston</a>
+                    </p>
+                </div>
+            </article>
+        </section>
+
+        <!-- ===================== Projects Section ===================== -->
+        <section aria-label="Projects">
+            <h2>Projects</h2>
+
+            <article>
+                <div class="item-header">
+                    <h3 class="item-title">Live Cattle Futures Sentiment Time Series</h3>
+                    <div class="item-dates">2025</div>
+                </div>
+                <div class="item-body">
+                    <ul>
+                        <li>Scraped the CFTC website for COT data to assess long and short managed money positions over time.</li>
+                        <li>Calculated rolling Z-scores and graphed results to identify current market maker sentiment for futures trading strategy.</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article>
+                <div class="item-header">
+                    <h3 class="item-title">Market Microstructure &amp; Time Step Optimization</h3>
+                    <div class="item-dates">2025</div>
+                </div>
+                <div class="item-body">
+                    <ul>
+                        <li>Developed a Brownian motion model using Taylor series expansion to unify continuous and discrete time for improved Monte Carlo options pricing.</li>
+                        <li>Applied thermodynamic principles (entropy, energy flow) to analyze market structure, assessing trend persistence and shock fragility.</li>
+                        <li>Evaluated tail density kurtosis for risk exposure and scenario analysis.</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article>
+                <div class="item-header">
+                    <h3 class="item-title">StockTrak Simulation</h3>
+                    <div class="item-dates">2023</div>
+                </div>
+                <div class="item-body">
+                    <ul>
+                        <li>Ranked first place with a 41.54% portfolio return, a Jensen’s Alpha of 24.3%, and a Sharpe Ratio of 4%.</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article>
+                <div class="item-header">
+                    <h3 class="item-title">Llama AI for Meta</h3>
+                    <div class="item-dates">2023</div>
+                </div>
+                <div class="item-body">
+                    <ul>
+                        <li>Subcontracted to train Meta’s Llama large language model.</li>
+                        <li>Wrote responses and quality controlled inputs and outputs for model training workflows.</li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+
+        <!-- ===================== Skills Section ===================== -->
+        <section aria-label="Skills">
+            <h2>Skills</h2>
+
+            <ul class="inline-list">
+                <li><span class="skills-category">Programming &amp; Analytics Tools:</span> Python, R, C++, SQL, VBA, Wolfram Language, Power BI.</li>
+                <li><span class="skills-category">ML / DL:</span> Regression, random forest, neural networks, quantum annealing, quantum computing.</li>
+                <li><span class="skills-category">Quantitative &amp; Statistical Analysis:</span> Hypothesis testing, probability distributions, risk ratios (Sharpe, Treynor, Jensen’s Alpha, beta), stochastic processes (Itô, OU), microstructure analysis.</li>
+                <li><span class="skills-category">Valuations &amp; Investments:</span> DCF / ROPI, WACC, 3-statement modeling, IRR, NPV, real options, variance analysis, pro forma, derivatives (futures, OTC, exotic / vanilla options, swaps, ABS / CDO / CDS), trading &amp; hedging, bond &amp; convertible valuation, Monte Carlo, Black-Scholes, binomial pricing, Newton-Raphson, ratio &amp; financial statement analysis, capital budgeting, risk management (VaR, Greeks).</li>
+                <li><span class="skills-category">Business &amp; Soft Skills:</span> Negotiation, client relations, Lean, policy writing, FOIA requests, public speaking.</li>
+            </ul>
+        </section>
+
+        <!-- ===================== Certifications Section ===================== -->
+        <section aria-label="Certifications">
+            <h2>Certifications</h2>
+            <ul class="inline-list">
+                <li>Bloomberg Market Concepts Certification, 2025.</li>
+                <li>Charles Koch Institute, Certified Public Policy Professional, 2015.</li>
+            </ul>
+        </section>
+
+        <!-- ===================== Languages Section ===================== -->
+        <section aria-label="Languages">
+            <h2>Languages</h2>
+            <ul class="inline-list">
+                <li>English – Native.</li>
+                <li>French – B1 level.</li>
+            </ul>
+        </section>
+
+        <!-- ===================== Research Publications Section ===================== -->
+        <section aria-label="Research Publications">
+            <h2>Research Publications</h2>
+            <ul class="inline-list">
+                <li><em>Proposal of Using Reverse Fokker-Planck as a Reconstruction Method of Implied Volatility: Initial Experiment for an Event Study</em>, 2025.</li>
+                <li><em>Examining Liquidity and Other Measures: The Private Equity Cash-and-Stock Deal</em>, 2024.</li>
+                <li><em>MA Tax Revenue Forecast: FY 2016 and FY 2017</em>.</li>
+            </ul>
+        </section>
+    </main>
+</div>
+</body>
+</html>
